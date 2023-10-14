@@ -72,4 +72,22 @@ const opration = (num1 , num2, type) =>{
 }
 
  const result = opration(90, 90, 'divide');
- console.log(result);
+//  console.log(result);
+
+const isEven = ( num1, num2) =>{
+    const result = num1 + num2;
+    if(typeof num1 === 'number' && typeof num2 === 'number'){
+        if(result % 2){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+    else{
+        return 'something went wrong';
+    }
+}
+
+const add = isEven([], 2);
+console.log(add);
